@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+    <div class="cal">
+        <input type="text" placeholder="0" id="inpbox" readonly>
+
+        <div>
+            <button onclick="ac()" class="operator">AC</button>
+            <button onclick="addtolast('(')" class="operator">(</button>
+            <button onclick="addtolast(')')" class="operator">)</button>
+            <button onclick="addtolast('/')" class="operator">/</button>
+        </div>
+
+        <div>
+            <button onclick="addtolast('7')">7</button>
+            <button onclick="addtolast('8')">8</button>
+            <button onclick="addtolast('9')">9</button>
+            <button onclick="addtolast('*')" class="operator">*</button>
+        </div>
+
+        <div>
+            <button onclick="addtolast('6')">6</button>
+            <button onclick="addtolast('5')">5</button>
+            <button onclick="addtolast('4')">4</button>
+            <button onclick="addtolast('-')" class="operator">-</button>
+        </div>
+
+        <div>
+            <button onclick="addtolast('1')">1</button>
+            <button onclick="addtolast('2')">2</button>
+            <button onclick="addtolast('3')">3</button>
+            <button onclick="addtolast('+')" class="operator">+</button>
+        </div>
+
+        <div>
+            <button onclick="addtolast('0')">0</button>
+            <button onclick="addtolast('.')">.</button>
+            <button onclick="del()" class="operator">DE</button>
+            <button onclick="cal()" class="btnequal">=</button>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

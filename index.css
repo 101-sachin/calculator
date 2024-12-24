@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+body {
+    width: 70vh;
+    height: 50vh;
+    margin: auto;
+}
+
+.cal {
+    border: 2px solid #000000;
+    padding: 10px;
+    border-radius: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 100%;
+    max-width: 350px;
+    padding: 10px;
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    font-size: 60px;
+    text-align: right;
+}
+
+button {
+    height: 60px;
+    width: 60px;
+    margin: 15px;
+    color: rgb(255, 255, 255);
+    border-radius: 25px;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.8);
+    font-size: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+button:hover {
+    color: #000000;
+    background: #f50303;
+}
+
+button:active {
+    color: #ffffff;
+    background: rgb(255, 174, 0);
+}
+
+.operator, .btnequal {
+    font-size: 24px;
+    color: rgb(255, 174, 0);
+}
+
+.btnequal {
+    color: #ffffff;
+    background: rgb(255, 174, 0);
+}
+
+@media (max-width: 1024px) {
+    body {
+        width: 90vh;
+        height: 55vh;
+    }
+
+    .cal {
+        width: 95%;
+    }
+
+    input {
+        font-size: 50px;
+    }
+
+    button {
+        height: 50px;
+        width: 50px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        width: 80vh;
+        height: 60vh;
+    }
+
+    .cal {
+        width: 90%;
+    }
+
+    input {
+        font-size: 45px;
+    }
+
+    button {
+        height: 45px;
+        width: 45px;
+        font-size: 16px;
+    }
+
+    .operator, .btnequal {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        width: 90vw;
+        height: 60vh;
+    }
+
+    .cal {
+        width: 100%;
+    }
+
+    input {
+        font-size: 40px;
+    }
+
+    button {
+        height: 40px;
+        width: 40px;
+        font-size: 14px;
+    }
+
+    .operator, .btnequal {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 320px) {
+    body {
+        width: 90vw;
+        height: 70vh;
+    }
+
+    .cal {
+        width: 100%;
+    }
+
+    input {
+        font-size: 35px;
+    }
+
+    button {
+        height: 40px;
+        width: 40px;
+        font-size: 14px;
+    }
+
+    .operator, .btnequal {
+        font-size: 16px;
+    }
+}
